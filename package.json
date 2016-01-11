@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && node test.js"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -33,7 +33,12 @@
     "yd"
   ],
   "devDependencies": {
-    "ava": "^0.0.4",
-    "xo": "^0.12.1"
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
   }
 }
